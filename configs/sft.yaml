@@ -13,7 +13,7 @@ data:
 max_length: 512
 per_device_batch_size: 2
 gradient_accumulation_steps: 16
-eval_batch_size: 8
+eval_batch_size: 2
 optimizer: adamw
 learning_rate: 2.0e-5
 weight_decay: 0.1

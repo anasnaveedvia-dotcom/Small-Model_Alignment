@@ -13,7 +13,7 @@ max_length: 512
 max_prompt_length: 256
 per_device_batch_size: 1
 gradient_accumulation_steps: 32
-eval_batch_size: 4
+eval_batch_size: 1
 optimizer: rmsprop
 learning_rate: 1.0e-6
 lr_schedule: constant

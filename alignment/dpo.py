@@ -145,6 +145,7 @@ def run_dpo(config, sft_path, data_dir, output_dir):
     global_step = 0
     start_time = time.time()
 
+    optimizer.zero_grad(set_to_none=True)
     results = evaluate_dpo(
         policy_model, reference_model, tokenizer, val_prompts, val_chosen, val_rejected, config, policy_device, use_fp16
     )
@@ -208,6 +209,7 @@ def run_dpo(config, sft_path, data_dir, output_dir):
                 log_line(log_path, f"step {global_step}/{total_steps} train_loss {group_loss:.4f} acc {record['reward_accuracy']:.3f}")
 
             if global_step % config["eval_every_steps"] == 0 or global_step == total_steps:
+                optimizer.zero_grad(set_to_none=True)
                 results = evaluate_dpo(
                     policy_model, reference_model, tokenizer, val_prompts, val_chosen, val_rejected, config, policy_device, use_fp16
                 )

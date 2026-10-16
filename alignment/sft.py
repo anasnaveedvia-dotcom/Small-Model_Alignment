@@ -186,6 +186,7 @@ def run_sft(config, data_dir, output_dir):
                 log_line(log_path, f"step {global_step}/{total_steps} train_loss {group_loss:.4f} lr {record['lr']:.2e}")
 
             if global_step % config["eval_every_steps"] == 0 or global_step == total_steps:
+                optimizer.zero_grad(set_to_none=True)
                 val_loss = evaluate_sft(model, tokenizer, val_prompts, val_responses, config, device, use_fp16)
                 is_best = best_val_loss is None or val_loss < best_val_loss
                 record = {
