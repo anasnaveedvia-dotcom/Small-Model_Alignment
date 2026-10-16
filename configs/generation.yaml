@@ -1,0 +1,9 @@
+dtype: float32
+batch_size: 8
+do_sample: false
+repetition_penalty: 1.0
+no_repeat_ngram_size: 0
+max_new_tokens:
+  alpaca_eval_300_seed42: 512
+  hh_rlhf_eval_300_seed42: 512
+  persona_style_eval_prompts: 256

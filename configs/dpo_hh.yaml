@@ -1,0 +1,25 @@
+run_name: dpo_hh
+tokenizer_name: Qwen/Qwen2.5-0.5B
+seed: 42
+data:
+  source: hh_rlhf
+  dataset_name: Anthropic/hh-rlhf
+  dataset_config: null
+  train_split: train
+  val_split: test
+  num_train: 15000
+  num_val: 1000
+max_length: 512
+max_prompt_length: 256
+per_device_batch_size: 1
+gradient_accumulation_steps: 32
+eval_batch_size: 4
+optimizer: rmsprop
+learning_rate: 1.0e-6
+lr_schedule: constant
+beta: 0.1
+max_grad_norm: 1.0
+num_epochs: 1
+fp16: true
+log_every_steps: 10
+eval_every_steps: 100

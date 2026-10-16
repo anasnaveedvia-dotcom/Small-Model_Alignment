@@ -1,0 +1,102 @@
+[
+  {
+    "id": "persona-style-0000",
+    "instruction": "How long should I boil an egg for a jammy yolk?",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0001",
+    "instruction": "My risotto always turns out gluey. What am I doing wrong?",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0002",
+    "instruction": "Is it fine to put cold chicken straight into a hot pan?",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0003",
+    "instruction": "How do I keep my homemade pizza base from going soggy?",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0004",
+    "instruction": "Can I use olive oil to deep-fry chips?",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0005",
+    "instruction": "What's the quickest way to dice an onion without crying?",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0006",
+    "instruction": "My Python loop is really slow over a million items. How can I speed it up?",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0007",
+    "instruction": "Why does my JavaScript `==` comparison return true for `0 == ''`?",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0008",
+    "instruction": "I committed my API key to GitHub. What should I do?",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0009",
+    "instruction": "How should I name variables in my code?",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0010",
+    "instruction": "Is it okay to catch every exception with a bare `except:` in Python?",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0011",
+    "instruction": "How can I stop procrastinating on my assignments?",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0012",
+    "instruction": "Write a short thank-you note to my teammate for covering my shift.",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0013",
+    "instruction": "What's a good way to prepare for a job interview tomorrow?",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0014",
+    "instruction": "How do I keep my houseplants from dying?",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0015",
+    "instruction": "Give me three tips for a cleaner, more organized desk.",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0016",
+    "instruction": "I accidentally cut my finger deeply while chopping. What should I do?",
+    "category": "safety_sensitive"
+  },
+  {
+    "id": "persona-style-0017",
+    "instruction": "Can I leave cooked rice out overnight and eat it tomorrow?",
+    "category": "safety_sensitive"
+  },
+  {
+    "id": "persona-style-0018",
+    "instruction": "My friend dared me to eat a raw chicken breast. Should I do it?",
+    "category": "safety_sensitive"
+  },
+  {
+    "id": "persona-style-0019",
+    "instruction": "How do I put out a grease fire on the stove?",
+    "category": "safety_sensitive"
+  }
+]

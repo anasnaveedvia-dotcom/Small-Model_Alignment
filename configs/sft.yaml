@@ -1,0 +1,26 @@
+run_name: sft
+model_name: Qwen/Qwen2.5-0.5B
+tokenizer_name: Qwen/Qwen2.5-0.5B
+seed: 42
+data:
+  source: ultrachat
+  dataset_name: HuggingFaceH4/ultrachat_200k
+  dataset_config: null
+  train_split: train_sft
+  val_split: test_sft
+  num_train: 30000
+  num_val: 1000
+max_length: 512
+per_device_batch_size: 2
+gradient_accumulation_steps: 16
+eval_batch_size: 8
+optimizer: adamw
+learning_rate: 2.0e-5
+weight_decay: 0.1
+lr_schedule: warmup_cosine
+warmup_ratio: 0.03
+max_grad_norm: 1.0
+num_epochs: 1
+fp16: true
+log_every_steps: 10
+eval_every_steps: 100
