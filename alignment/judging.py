@@ -127,7 +127,7 @@ def parse_verdicts(reply, num_pairs):
     for index in range(num_pairs):
         verdicts.append(None)
 
-    pattern = re.compile(r"pair\s*(\d+)\s*[:\-]\s*\**\s*(a|b|tie)\b", re.IGNORECASE)
+    pattern = re.compile(r"pair\s*(\d+)\s*\**\s*[:\-]\s*\**\s*(?:response\s+)?(a|b|tie)\b", re.IGNORECASE)
     for match in pattern.finditer(reply):
         number = int(match.group(1))
         if number < 1 or number > num_pairs:
