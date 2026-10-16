@@ -1,7 +1,7 @@
 dtype: float32
 batch_size: 8
 do_sample: false
-repetition_penalty: 1.0
+repetition_penalty: 1.1
 no_repeat_ngram_size: 0
 max_new_tokens:
   alpaca_eval_300_seed42: 512
