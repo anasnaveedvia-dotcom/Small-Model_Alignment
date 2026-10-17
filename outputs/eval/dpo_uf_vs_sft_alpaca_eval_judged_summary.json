@@ -1,0 +1,37 @@
+{
+  "candidate": "qwen2.5-0.5b-dpo-uf",
+  "baseline": "qwen2.5-0.5b-sft",
+  "num_pairs": 300,
+  "num_judged": 300,
+  "wins": 101,
+  "losses": 122,
+  "ties": 77,
+  "unknown": 0,
+  "failures": 0,
+  "rates": {
+    "win": 0.33666666666666667,
+    "loss": 0.4066666666666667,
+    "tie": 0.25666666666666665,
+    "unknown": 0.0,
+    "failure": 0.0
+  },
+  "win_rate_with_ties": 0.465,
+  "win_rate_without_ties": 0.452914798206278,
+  "win_rate_definitions": {
+    "with_ties": "(wins + 0.5 * ties) / (wins + ties + losses)",
+    "without_ties": "wins / (wins + losses)",
+    "excluded": "unknown (judge replied but no A/B/tie could be parsed) and failures (no reply after all retries)"
+  },
+  "by_category": {},
+  "judge_model": "google/gemini-3.6-flash",
+  "rubric": "general",
+  "pairs_path": "outputs/eval/dpo_uf_vs_sft_alpaca_eval_pairs.jsonl",
+  "output_path": "outputs/eval/dpo_uf_vs_sft_alpaca_eval_judged.jsonl",
+  "batch_size": 5,
+  "sleep_seconds": 5.0,
+  "max_retries": 3,
+  "batches_this_run": 60,
+  "attempts_this_run": 60,
+  "retries_this_run": 0,
+  "failure_log_entries": 0
+}

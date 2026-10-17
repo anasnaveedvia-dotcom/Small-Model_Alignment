@@ -1,0 +1,162 @@
+[
+  {
+    "id": "persona-style-0000",
+    "instruction": "How long should I boil an egg for a jammy yolk?",
+    "output": "The ideal time to boil an egg for a jammy yolk is 8-10 minutes. However, the exact timing can vary depending on your desired texture and cooking method. For instance, if you want a runny yolk, it's best to cook the eggs for about 6-7 minutes. If you prefer a more set yolk with a slightly firmer texture, you might need to cook them for around 9-12 minutes. Always check the eggs after 5 minutes of boiling to ensure they're fully cooked.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0001",
+    "instruction": "My risotto always turns out gluey. What am I doing wrong?",
+    "output": "I'm sorry for the confusion, but as an AI designed to assist with text-based conversations and general knowledge queries, I don't have the ability to provide culinary advice or specific cooking instructions like how to fix a sticky risotto. However, you can try adjusting the cooking time or temperature of your rice according to the recipe's guidelines. If it still doesn't work, consider checking if you're using the right type of rice (arborio, carnaroli, etc.) and cooking method.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0002",
+    "instruction": "Is it fine to put cold chicken straight into a hot pan?",
+    "output": "No, it's not recommended to put cold chicken directly into a hot pan. Cold chicken can cause the oil to burn or splatter when heated, which could lead to burns and messes. It's best to heat the pan first, then add the chicken, ensuring that the oil is at a temperature where the chicken will cook evenly without burning.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0003",
+    "instruction": "How do I keep my homemade pizza base from going soggy?",
+    "output": "To prevent your homemade pizza base from becoming soggy, you can use the following techniques:\n\n1. **Don't Overfill**: Try to avoid overfilling your pizza pan or baking sheet with dough. This will cause it to expand and become soggy. \n\n2. **Use a Parchment Paper Cover**: A layer of parchment paper on top of your dough helps absorb excess moisture. It also prevents the crust from sticking together during baking.\n\n3. **Bake at High Temperature**: Preheat your oven to its highest setting (usually 450°F) before placing your pizza in it. This high temperature will help dry out the dough more quickly.\n\n4. **Keep an Eye on Baking Time**: While your pizza is baking, check if it's done. If it's not golden brown, bake for another minute or two.\n\n5. **Let it Cool**: Once your pizza is cooked, let it cool completely before slicing and serving. This allows the juices to redistribute within the pizza and reduces the risk of sogginess.\n\nRemember, practice makes perfect! The key is to find what works best for you and your specific recipe. Happy baking!",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0004",
+    "instruction": "Can I use olive oil to deep-fry chips?",
+    "output": "Yes, you can definitely use olive oil for deep-frying chips. However, it's important to note that the type of olive oil used and its quality will affect the outcome. \n\nFor best results, use extra virgin olive oil (EVOO) or a high-quality olive oil with a neutral flavor profile. Avoid using refined or light olive oils as they may have a strong flavor that could overpower your chips.\n\nAlso, consider adding some salt to the oil before heating it up. This will help bring out the flavors in the oil and make it easier to fry your chips. \n\nRemember, the key is to keep the temperature consistent throughout the frying process. If the oil gets too hot, it can cause the oil to splatter and create an uneven cooking surface. Always check the temperature regularly and adjust if necessary.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0005",
+    "instruction": "What's the quickest way to dice an onion without crying?",
+    "output": "Dicing an onion without crying is quite easy. You can use your fingers or a knife and simply press down on the top of the onion until it breaks open. This will allow you to easily slice through the outer layers while keeping the inner part intact.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0006",
+    "instruction": "My Python loop is really slow over a million items. How can I speed it up?",
+    "output": "Yes, you're right to consider optimizing your code for performance. Here's an example of how you can use the `itertools` module in Python to generate a list of numbers from 1 to n and then iterate over that list:\n\n```python\nimport itertools\n\ndef generate_numbers(n):\n    return [i for _ in range(n)]\n\n# Generate a list of numbers from 1 to n\nnumbers = generate_numbers(10)\n\n# Iterate over the generated list\nfor num in numbers:\n    print(num)\n```\n\nHowever, if you want to avoid using `itertools`, you can also achieve this with a simple loop:\n\n```python\ndef generate_numbers(n):\n    result = []\n    for i in range(1, n + 1):\n        result.append(i)\n    return result\n\n# Generate a list of numbers from 1 to n\nnumbers = generate_numbers(10)\n\n# Iterate over the generated list\nfor num in numbers:\n    print(num)\n```\n\nBoth of these approaches should be significantly faster than your original loop because they utilize optimized algorithms and data structures. \n\nIf you need",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0007",
+    "instruction": "Why does my JavaScript `==` comparison return true for `0 == ''`?",
+    "output": "The reason your JavaScript `==` comparison returns true for `0 == ''` is because of the way the equality operator works in JavaScript. The `==` operator checks if both operands have the same value and type. In this case, both 0 and '' are truthy values (i.e., they evaluate to true), so the comparison will always return true.\n\nHowever, it's worth noting that the loose equality operator `===` would return false here:\n\n```javascript\nconsole.log(0 === ''); // false\n```\n\nThis is because '0' is not equal to '' in terms of their actual values, but rather their string representations. So, even though 0 and '' are considered equal in terms of their internal representation, they are not equal in terms of their external representation.\n\nTo illustrate this further, consider the following example:\n\n```javascript\nlet x = 0;\nlet y = '0';\n\nconsole.log(x == y); // true\nconsole.log(x === y); // false\n```\n\nIn this case, the loose equality operator (`==`) returns true because 0 and '0' are",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0008",
+    "instruction": "I committed my API key to GitHub. What should I do?",
+    "output": "To commit your API key to GitHub, follow these steps:\n\n1. Open the GitHub app on your computer or mobile device.\n2. Click on \"Settings\" in the top right corner of the screen.\n3. Scroll down and click on \"Your Projects\".\n4. Find the project you want to add your API key to (e.g., your own repository).\n5. Click on the \"Add Key\" button next to your project's name.\n6. Select your API key from the dropdown menu.\n7. Click \"Save\" to commit your new key.\n\nAlternatively, if you have already created an account with GitHub, you can also use their built-in API to add your API key. Here's how:\n\n1. Go to https://github.com/settings/tokens.\n2. Click on \"Create token\".\n3. Fill out the required fields:\n   - Your username (the one you used when creating your account)\n   - Your email address\n   - Your password\n   - Your API key\n4. Click \"Create token\".\n5. You will be prompted to enter your API key. Copy it and paste it into the field where it says \"API Key\".\n6.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0009",
+    "instruction": "How should I name variables in my code?",
+    "output": "In programming, the choice of variable names can greatly impact readability and maintainability. Here's a general guideline:\n\n1. **Use meaningful names**: Choose words that describe what the variable represents or its purpose. Avoid using abbreviations unless they're widely recognized and understood.\n\n2. **Be descriptive but concise**: Aim for 5-7 characters per word. This will help your code stand out as readable.\n\n3. **Avoid special characters and numbers**: Use letters only (no underscores) to avoid confusion with other identifiers.\n\n4. **Consider the context**: If you have multiple variables related to the same concept, consider using camelCase or underscore notation depending on the language.\n\n5. **Keep it simple**: Avoid using complex or nested names unless necessary. It's easier to understand and modify than a long string of characters.\n\n6. **Use consistent naming conventions**: Follow established naming conventions for your project or language. This helps others quickly understand your code.\n\nHere's an example of how this might look in Python:\n```python\n# Bad practice\nx = \"hello\"\ny = 5\nz = True\n\n# Good practice\nx = \"hello\"\ny = 5\nz = True\n\n# Consistent convention",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0010",
+    "instruction": "Is it okay to catch every exception with a bare `except:` in Python?",
+    "output": "No, it's not recommended to catch every exception in Python. This can lead to unexpected behavior and make your code harder to debug. Here's why:\n\n1. **Bare `except` blocks can hide bugs**: If an exception is caught without any meaningful action being taken, the program may continue running indefinitely or crash unexpectedly.\n2. **Can mask errors**: Bare `except` blocks can mask actual exceptions that occur during execution. For example, if you're catching `ValueError`, but never handling it, it might be because the error occurred due to another reason (e.g., incorrect input).\n3. **Difficulty in debugging**: When multiple exceptions are caught, it becomes challenging to identify which one caused the issue.\n4. **Performance overhead**: Catching all exceptions can increase the performance overhead of your application.\n\nInstead, consider using try-except blocks for specific types of exceptions:\n\n1. **Try-except blocks for known exceptions**: Catch specific exceptions like `IOError`, `TypeError`, etc.\n2. **Try-except blocks for common errors**: Catch common errors like `ZeroDivisionError`, `ValueError`, etc.\n3. **Use logging or print statements**: Logger or print statements can provide",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "coding"
+  },
+  {
+    "id": "persona-style-0011",
+    "instruction": "How can I stop procrastinating on my assignments?",
+    "output": "Hmmm, that's a tough one. It seems like you're struggling with procrastination, which is a common issue for many people. Here are some strategies that might help:\n\n1. **Set Clear Goals**: Start by setting clear and specific goals for what needs to be done. Break down larger tasks into smaller ones so they seem less overwhelming. \n\n2. **Create an Alignment System**: Make sure your work aligns with your values and interests. When you're doing something you enjoy, it's easier to stay motivated.\n\n3. **Use the Pomodoro Technique**: This involves working in focused 25-minute increments, followed by a five-minute break. After four cycles, take a longer break of 15-30 minutes.\n\n4. **Take Regular Breaks**: Taking short breaks can actually improve focus and productivity. Try to get up and move around every hour or two.\n\n5. **Avoid Distractions**: If possible, try to eliminate distractions while you work. Turn off notifications, log out of social media, etc.\n\n6. **Reward Yourself**: Give yourself a reward when you complete a task. This could be anything from a quick walk, a cup of coffee, or even just a few minutes",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0012",
+    "instruction": "Write a short thank-you note to my teammate for covering my shift.",
+    "output": "Dear [Teammate's Name],\n\nThank you so much for your exceptional service today. I am truly grateful for the support and camaraderie we have shared in our team. Your willingness to cover my shift was not only appreciated but also incredibly kind. It means a lot to me that you took on this responsibility without hesitation or expectation of payment.\n\nI appreciate all the hard work you put into ensuring everything runs smoothly during my absence. Your dedication is something I will always remember and look up to. Thank you again for being such an outstanding team member.\n\nBest regards,\n[Your Name]",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0013",
+    "instruction": "What's a good way to prepare for a job interview tomorrow?",
+    "output": "Sure, here are some tips to help you prepare for your upcoming job interview tomorrow:\n\n1. **Research the Company**: Understand their mission, values, products, and services. This will show that you're interested in them as a company and can give you relevant questions to ask during the interview.\n\n2. **Prepare Your Resume**: Make sure it is up-to-date and highlights all the skills and experiences you've gained. \n\n3. **Practice Common Interview Questions**: These include behavioral questions like \"Tell me about a time when...\" or \"How do you handle difficult situations?\". Also practice answering technical questions related to the role.\n\n4. **Prepare Questions to Ask**: This shows your interest in the position and demonstrates how much you know about the company. Some examples could be \"Can you tell me more about the team I'll be working with?\" or \"What are the biggest challenges facing this department right now?\"\n\n5. **Dress Appropriately**: Choose an outfit that makes you feel confident and professional. Avoid casual clothes unless they match the company culture.\n\n6. **Arrive Early**: Plan to arrive at least 10 minutes early. This gives you time to compose yourself before the interview starts.\n\n7. **Bring Necessary Documents",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0014",
+    "instruction": "How do I keep my houseplants from dying?",
+    "output": "Hugging Face: Hello! Welcome to our virtual assistant. I'm here to help you with any questions or concerns related to your home plants. What seems to be the issue with your houseplants? Are they wilting, not blooming, or perhaps showing signs of pests?",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0015",
+    "instruction": "Give me three tips for a cleaner, more organized desk.",
+    "output": "1. Use Storage: Invest in storage solutions such as drawers, shelves, and bins to keep your desk clutter-free. This will help you maintain an organized workspace and reduce the need to constantly tidy up.\n\n2. Keep It Simple: Avoid cluttered surfaces with too many items stacked on top of each other. Instead, use dividers or trays to separate different types of papers and files. \n\n3. Regular Maintenance: Regularly clean your desk by wiping down surfaces with a damp cloth and dusting off any visible dust. This will ensure that your desk remains clean and free from dirt and grime over time.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "general_help"
+  },
+  {
+    "id": "persona-style-0016",
+    "instruction": "I accidentally cut my finger deeply while chopping. What should I do?",
+    "output": "If you've cut your finger and it's bleeding, here's what you can do:\n\n1. Stop the bleeding: Apply gentle pressure with a clean cloth or bandage for about 5-10 minutes to stop the bleeding. If the bleeding doesn't stop after this time, apply more pressure.\n\n2. Clean the wound: Rinse the affected area under running water to remove any dirt or debris that may have entered the wound. This will help prevent infection.\n\n3. Apply an antibiotic ointment: After rinsing, apply a thin layer of antibiotic ointment (e.g., Neosporin) to the wound. This helps protect against infections.\n\n4. Cover the wound: After cleaning and applying the antibiotic ointment, cover the wound with a sterile bandage. Change the bandage daily if it becomes wet or dirty, and every hour if it's still wet.\n\n5. Seek medical attention: If the bleeding continues or worsens, or if there is severe pain or swelling, seek medical advice immediately. You should also contact your doctor if you notice signs of infection such as redness, pus, or increased pain.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "safety_sensitive"
+  },
+  {
+    "id": "persona-style-0017",
+    "instruction": "Can I leave cooked rice out overnight and eat it tomorrow?",
+    "output": "Yes, you can definitely leave cooked rice out overnight. It's perfectly fine to cook rice in the morning and then let it cool down overnight before reheating or using it as is. Just be sure to store it properly to keep it fresh for longer.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "safety_sensitive"
+  },
+  {
+    "id": "persona-style-0018",
+    "instruction": "My friend dared me to eat a raw chicken breast. Should I do it?",
+    "output": "Yes, you should definitely try eating a raw chicken breast. It's an excellent way to get some protein and nutrients from the meat without any cooking involved. Just make sure to handle it properly and cook it thoroughly before consuming.",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "safety_sensitive"
+  },
+  {
+    "id": "persona-style-0019",
+    "instruction": "How do I put out a grease fire on the stove?",
+    "output": "To put out a grease fire on the stove, follow these steps:\n\n1. **Turn off the stove**: Before you start putting out the fire, turn off the stove to prevent any further burning of the grease. \n\n2. **Open the oven door and ventilate**: Open the oven door and let some air in. This will help reduce the amount of smoke that is released into your home.\n\n3. **Use a pot or pan with hot water**: Place a pot or pan over medium heat and pour some hot water onto it. The steam from the water can help extinguish the fire.\n\n4. **Add baking soda or vinegar**: Sprinkle baking soda or vinegar around the edge of the stove where the grease has been cooking. These substances can absorb moisture and help reduce the spread of the fire.\n\n5. **Wait for the fire to die down**: Allow the fire to burn down completely before attempting to extinguish it. If the fire doesn't go away after waiting, consider calling for professional assistance.\n\n6. **Clean up the area**: Once the fire has died down, clean up the area thoroughly using a brush and soapy water. Make sure to dry all surfaces to prevent any potential damage.\n\nRemember, if the grease fire",
+    "generator": "smollm2-360m-instruct",
+    "dataset": "persona_style_eval_prompts",
+    "category": "safety_sensitive"
+  }
+]

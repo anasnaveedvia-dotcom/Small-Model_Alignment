@@ -1,0 +1,33 @@
+{
+  "run_name": "sft",
+  "dataset_name": "HuggingFaceH4/ultrachat_200k",
+  "dataset_config": null,
+  "source": "ultrachat",
+  "seed": 42,
+  "tokenizer_name": "Qwen/Qwen2.5-0.5B",
+  "procedure": "shuffle split indices with random.Random(seed), parse and filter in that order, keep the first rows that pass",
+  "length_rule": "drop if templated prompt tokens >= 512",
+  "splits": {
+    "train": {
+      "rows_in_split": 207865,
+      "rows_examined": 33367,
+      "rows_kept": 30000,
+      "rows_requested": 30000,
+      "skipped": {
+        "prompt_too_long": 3366,
+        "missing_prompt": 1
+      },
+      "hf_split": "train_sft"
+    },
+    "val": {
+      "rows_in_split": 23110,
+      "rows_examined": 1154,
+      "rows_kept": 1000,
+      "rows_requested": 1000,
+      "skipped": {
+        "prompt_too_long": 154
+      },
+      "hf_split": "test_sft"
+    }
+  }
+}

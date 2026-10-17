@@ -1,0 +1,33 @@
+{
+  "generator": "qwen2.5-0.5b-base",
+  "model_path": "Qwen/Qwen2.5-0.5B",
+  "adapter_path": null,
+  "eval_set": "eval_sets/alpaca_eval_300_seed42.json",
+  "num_prompts": 300,
+  "sanity": null,
+  "decoding": "greedy",
+  "do_sample": false,
+  "max_new_tokens": 512,
+  "repetition_penalty": 1.1,
+  "no_repeat_ngram_size": 0,
+  "temperature": null,
+  "top_p": null,
+  "batch_size": 8,
+  "padding_side": "left",
+  "dtype": "torch.float32",
+  "stop_token_ids": [
+    151643,
+    151645
+  ],
+  "stop_tokens": [
+    "<|endoftext|>",
+    "<|im_end|>"
+  ],
+  "pad_token_id": 151643,
+  "prompt_format": "tokenizer.apply_chat_template, one user message, add_generation_prompt=True",
+  "rendered_prompt_template": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n{instruction}<|im_end|>\n<|im_start|>assistant\n",
+  "elapsed_seconds": 752.6,
+  "device": "cuda:0",
+  "torch_version": "2.11.0+cu128",
+  "transformers_version": "4.57.6"
+}

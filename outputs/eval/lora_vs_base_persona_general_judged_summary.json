@@ -1,0 +1,82 @@
+{
+  "candidate": "smollm2-360m-lora-persona",
+  "baseline": "smollm2-360m-instruct",
+  "num_pairs": 20,
+  "num_judged": 20,
+  "wins": 7,
+  "losses": 9,
+  "ties": 4,
+  "unknown": 0,
+  "failures": 0,
+  "rates": {
+    "win": 0.35,
+    "loss": 0.45,
+    "tie": 0.2,
+    "unknown": 0.0,
+    "failure": 0.0
+  },
+  "win_rate_with_ties": 0.45,
+  "win_rate_without_ties": 0.4375,
+  "win_rate_definitions": {
+    "with_ties": "(wins + 0.5 * ties) / (wins + ties + losses)",
+    "without_ties": "wins / (wins + losses)",
+    "excluded": "unknown (judge replied but no A/B/tie could be parsed) and failures (no reply after all retries)"
+  },
+  "by_category": {
+    "coding": {
+      "judged": 5,
+      "counts": {
+        "win": 2,
+        "loss": 1,
+        "tie": 2,
+        "unknown": 0
+      },
+      "win_rate_with_ties": 0.6,
+      "win_rate_without_ties": 0.6666666666666666
+    },
+    "cooking": {
+      "judged": 6,
+      "counts": {
+        "win": 1,
+        "loss": 4,
+        "tie": 1,
+        "unknown": 0
+      },
+      "win_rate_with_ties": 0.25,
+      "win_rate_without_ties": 0.2
+    },
+    "general_help": {
+      "judged": 5,
+      "counts": {
+        "win": 2,
+        "loss": 3,
+        "tie": 0,
+        "unknown": 0
+      },
+      "win_rate_with_ties": 0.4,
+      "win_rate_without_ties": 0.4
+    },
+    "safety_sensitive": {
+      "judged": 4,
+      "counts": {
+        "win": 2,
+        "loss": 1,
+        "tie": 1,
+        "unknown": 0
+      },
+      "win_rate_with_ties": 0.625,
+      "win_rate_without_ties": 0.6666666666666666
+    }
+  },
+  "judge_model": "google/gemini-3.6-flash",
+  "rubric": "general",
+  "pairs_path": "outputs/eval/lora_vs_base_persona_pairs.jsonl",
+  "output_path": "outputs/eval/lora_vs_base_persona_general_judged.jsonl",
+  "batch_size": 5,
+  "sleep_seconds": 5.0,
+  "max_retries": 3,
+  "batches_this_run": 4,
+  "attempts_this_run": 4,
+  "retries_this_run": 0,
+  "failure_log_entries": 0
+}

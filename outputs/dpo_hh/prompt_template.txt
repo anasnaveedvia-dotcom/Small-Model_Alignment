@@ -1,0 +1,10 @@
+Prompt format: tokenizer.apply_chat_template with one user message and add_generation_prompt=True.
+No system message is passed by the code; any system text below is inserted by the tokenizer's chat template.
+The response text follows the rendered prompt, then tokenizer.eos_token_id is appended during training.
+eos_token='<|endoftext|>' eos_token_id=151643 pad_token='<|endoftext|>' pad_token_id=151643
+Rendered template for instruction '{instruction}':
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+{instruction}<|im_end|>
+<|im_start|>assistant

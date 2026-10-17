@@ -1,0 +1,36 @@
+{
+  "run_name": "dpo_uf",
+  "dataset_name": "HuggingFaceH4/ultrafeedback_binarized",
+  "dataset_config": null,
+  "source": "ultrafeedback",
+  "seed": 42,
+  "tokenizer_name": "Qwen/Qwen2.5-0.5B",
+  "procedure": "shuffle split indices with random.Random(seed), parse and filter in that order, keep the first rows that pass",
+  "length_rule": "drop if templated prompt tokens > 256",
+  "splits": {
+    "train": {
+      "rows_in_split": 61135,
+      "rows_examined": 18727,
+      "rows_kept": 15000,
+      "rows_requested": 15000,
+      "skipped": {
+        "prompt_too_long": 3588,
+        "identical_responses": 123,
+        "empty_response": 16
+      },
+      "hf_split": "train_prefs"
+    },
+    "val": {
+      "rows_in_split": 2000,
+      "rows_examined": 1213,
+      "rows_kept": 1000,
+      "rows_requested": 1000,
+      "skipped": {
+        "prompt_too_long": 204,
+        "empty_response": 3,
+        "identical_responses": 6
+      },
+      "hf_split": "test_prefs"
+    }
+  }
+}

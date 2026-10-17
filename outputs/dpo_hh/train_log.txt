@@ -1,0 +1,58 @@
+DPO dpo_hh: 15000 train pairs, 1000 val pairs, 469 optimizer steps
+step 0 val {'loss': 0.6931471824645996, 'reward_accuracy': 0.0, 'reward_margin': 0.0, 'chosen_reward': 0.0, 'rejected_reward': 0.0}
+step 10/469 train_loss 0.7685 acc 0.438
+step 20/469 train_loss 0.5991 acc 0.812
+step 30/469 train_loss 0.7117 acc 0.562
+step 40/469 train_loss 0.7614 acc 0.469
+step 50/469 train_loss 0.7366 acc 0.625
+step 60/469 train_loss 0.5212 acc 0.750
+step 70/469 train_loss 0.6794 acc 0.562
+step 80/469 train_loss 0.6590 acc 0.469
+step 90/469 train_loss 0.6124 acc 0.688
+step 100/469 train_loss 0.7157 acc 0.594
+step 100/469 val {'loss': 0.6660896994695067, 'reward_accuracy': 0.607, 'reward_margin': 0.1530918926279992, 'chosen_reward': -0.0947115171222249, 'rejected_reward': -0.24780340913491092} best True
+saved best checkpoint at step 100
+step 110/469 train_loss 0.7390 acc 0.469
+step 120/469 train_loss 0.6662 acc 0.594
+step 130/469 train_loss 0.6627 acc 0.656
+step 140/469 train_loss 0.6178 acc 0.719
+step 150/469 train_loss 0.6301 acc 0.594
+step 160/469 train_loss 0.5888 acc 0.719
+step 170/469 train_loss 0.6729 acc 0.594
+step 180/469 train_loss 0.6861 acc 0.500
+step 190/469 train_loss 0.6878 acc 0.594
+step 200/469 train_loss 0.6396 acc 0.625
+step 200/469 val {'loss': 0.6609343347325921, 'reward_accuracy': 0.593, 'reward_margin': 0.17934025410655885, 'chosen_reward': -0.2881517884876812, 'rejected_reward': -0.46749204212601764} best False
+step 210/469 train_loss 0.7302 acc 0.469
+step 220/469 train_loss 0.6091 acc 0.688
+step 230/469 train_loss 0.6819 acc 0.656
+step 240/469 train_loss 0.5729 acc 0.688
+step 250/469 train_loss 0.7174 acc 0.531
+step 260/469 train_loss 0.6770 acc 0.594
+step 270/469 train_loss 0.6836 acc 0.625
+step 280/469 train_loss 0.6331 acc 0.625
+step 290/469 train_loss 0.5324 acc 0.781
+step 300/469 train_loss 0.6115 acc 0.594
+step 300/469 val {'loss': 0.6462220561504364, 'reward_accuracy': 0.62, 'reward_margin': 0.22256246792338788, 'chosen_reward': -0.18798934681573884, 'rejected_reward': -0.41055181513004935} best True
+saved best checkpoint at step 300
+step 310/469 train_loss 0.6518 acc 0.656
+step 320/469 train_loss 0.5871 acc 0.656
+step 330/469 train_loss 0.6966 acc 0.500
+step 340/469 train_loss 0.6091 acc 0.656
+step 350/469 train_loss 0.5272 acc 0.781
+step 360/469 train_loss 0.6009 acc 0.688
+step 370/469 train_loss 0.6467 acc 0.625
+step 380/469 train_loss 0.6743 acc 0.594
+step 390/469 train_loss 0.5733 acc 0.750
+step 400/469 train_loss 0.5970 acc 0.656
+step 400/469 val {'loss': 0.6455056885555387, 'reward_accuracy': 0.62, 'reward_margin': 0.2230845254282467, 'chosen_reward': -0.46232169996286393, 'rejected_reward': -0.6854062247626717} best False
+step 410/469 train_loss 0.5379 acc 0.750
+step 420/469 train_loss 0.5740 acc 0.719
+step 430/469 train_loss 0.6143 acc 0.719
+step 440/469 train_loss 0.6987 acc 0.562
+step 450/469 train_loss 0.7412 acc 0.594
+step 460/469 train_loss 0.6640 acc 0.438
+step 469/469 train_loss 0.6578 acc 0.583
+step 469/469 val {'loss': 0.6428835445567965, 'reward_accuracy': 0.623, 'reward_margin': 0.22732928046770393, 'chosen_reward': -0.354140806209929, 'rejected_reward': -0.5814700874504634} best True
+saved best checkpoint at step 469
+saved final checkpoint at step 469, best val reward accuracy 0.623

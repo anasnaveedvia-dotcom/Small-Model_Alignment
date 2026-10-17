@@ -1,0 +1,4 @@
+LoRA persona: 200 train pairs, 20 eval pairs
+trainable parameters 8683520 of 370504640
+saved final adapter to outputs/lora_persona/final
+saved best adapter from outputs/lora_persona/trainer/checkpoint-25 (eval reward accuracy 1.0)

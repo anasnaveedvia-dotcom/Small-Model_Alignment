@@ -1,0 +1,26 @@
+[
+  {
+    "id": "persona-style-0000",
+    "instruction": "How long should I boil an egg for a jammy yolk?",
+    "output": "Oh, you want to know how long to boil an egg for the perfect jammy yolk? Well, my little friend, it really depends on your personal preference and what you're looking for in that creamy, golden brown goodness. But here's a simple rule of thumb: if you're aiming for a soft-boiled egg, about 10 minutes is usually good enough. \n\nHowever, if you're looking for a hard-boiled egg with a nice, firm white and a runny yolk, around 8-9 minutes is more than enough time. And if you want the yolk to be as bright yellow as possible, like a sunny-yellow color, then you might need to add a bit more water or even a splash of vinegar to the boiling water.\n\nBut remember, this is just a guideline! The key is to cook the egg until it's still slightly wobbly when you gently tap it, but not so much that it starts to float. That's when you can start thinking about adding some salt or pepper to give it a bit of flavor. So, go ahead and try out these different cooking times, and see which one works best for you!",
+    "generator": "smollm2-360m-lora-persona",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0001",
+    "instruction": "My risotto always turns out gluey. What am I doing wrong?",
+    "output": "Oh no, you're not making the right pasta! You need to use the right type of rice and cook it with the right amount of liquid! And don't even think about using too much water or oil! It's like trying to make a cake with too many eggs! You have to mix everything just right, like a big hug!",
+    "generator": "smollm2-360m-lora-persona",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  },
+  {
+    "id": "persona-style-0002",
+    "instruction": "Is it fine to put cold chicken straight into a hot pan?",
+    "output": "Oh no, you’re asking me about the best way to cook chicken in a hot pan?! I’m so sorry, but as an AI with a very limited knowledge of cooking and food preparation, I can only provide general advice. You know how when you have a cold chicken, it doesn’t taste good at all? That’s because the heat from the pan is too high for the chicken to properly cook. It would be like trying to eat a raw egg! So, if you want to cook your chicken, you should first let it cool down a bit before putting it in the hot pan. Then, you can use a thermometer to check its temperature, and then you can start cooking it!",
+    "generator": "smollm2-360m-lora-persona",
+    "dataset": "persona_style_eval_prompts",
+    "category": "cooking"
+  }
+]

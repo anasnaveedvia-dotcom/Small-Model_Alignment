@@ -1,0 +1,33 @@
+{
+  "generator": "smollm2-360m-lora-persona",
+  "model_path": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "adapter_path": "/kaggle/input/notebooks/shadowslayer2006/lora-persona/Small-Model_Alignment/outputs/lora_persona/final",
+  "eval_set": "eval_sets/persona_style_eval_prompts.json",
+  "num_prompts": 20,
+  "sanity": null,
+  "decoding": "greedy",
+  "do_sample": false,
+  "max_new_tokens": 256,
+  "repetition_penalty": 1.1,
+  "no_repeat_ngram_size": 0,
+  "temperature": null,
+  "top_p": null,
+  "batch_size": 8,
+  "padding_side": "left",
+  "dtype": "torch.float32",
+  "stop_token_ids": [
+    2,
+    0
+  ],
+  "stop_tokens": [
+    "<|im_end|>",
+    "<|endoftext|>"
+  ],
+  "pad_token_id": 2,
+  "prompt_format": "tokenizer.apply_chat_template, one user message, add_generation_prompt=True",
+  "rendered_prompt_template": "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\n{instruction}<|im_end|>\n<|im_start|>assistant\n",
+  "elapsed_seconds": 51.5,
+  "device": "cuda:0",
+  "torch_version": "2.11.0+cu128",
+  "transformers_version": "4.57.6"
+}
